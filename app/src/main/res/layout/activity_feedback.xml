@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="7dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menunav">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10pt"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#673AB7"
+        android:gravity="center_horizontal"
+        android:text="Feedback"
+        android:textColor="#FFFFFF"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        app:fontFamily="@font/autour_one" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="392dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/te1"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/book1" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="30dp"
+        android:background="#0D716747"
+        android:numStars="5"
+        android:progressBackgroundTint="#673AB7"
+        android:progressTint="#FFC107" />
+
+
+    <EditText
+        android:id="@+id/ee1"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/ratingBar2"
+        android:layout_marginLeft="@android:dimen/app_icon_size"
+        android:layout_marginRight="@android:dimen/app_icon_size"
+        android:background="#FFFFFF"
+            android:layout_marginTop="15pt"
+        android:hint="Enter your feedback"
+        android:textSize="9pt" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ee1"
+        android:layout_marginLeft="30pt"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="#FF5722"
+        android:text="Send feedback"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b4"
+        android:layout_marginLeft="30pt"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="#FF5722"
+        android:text="Notification"
+        android:textColor="#FFFFFF"
+        android:onClick="showNotification"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
+
